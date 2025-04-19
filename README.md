@@ -1,52 +1,53 @@
 # 🛠️ Product Management REST API with Spring Boot
 
-This project is a fully functional **RESTful API** built using **Spring Boot** that allows users to perform CRUD operations on a collection of products. It follows best practices including DTO usage, layered architecture, validation, and centralized exception handling.
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-green?logo=spring)
+![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
----
+A fully functional **RESTful API** built using **Spring Boot** that allows CRUD operations on products. Follows best practices including DTO usage, layered architecture, validation, and centralized exception handling.
 
 ## ✨ Features
 
-- ✅ Create, Read, Update, and Delete products.
-- 🔐 Uses DTOs to separate internal models from external requests/responses.
-- 📏 Field-level validation using annotations and custom validators.
-- ⚠️ Global exception handling with descriptive, structured error responses.
-- 🧼 Clean and scalable codebase following layered architecture.
-
----
+- ✅ Full CRUD operations for products
+- 🔐 DTO pattern implementation for request/response separation
+- 📏 Comprehensive field validation with custom error messages
+- ⚠️ Global exception handling with consistent error responses
+- 🧼 Clean, layered architecture following SOLID principles
+- 🚀 H2 in-memory database for easy development
 
 ## 📦 Tech Stack
 
-- Java 17
-- Spring Boot 3.x
-- Spring Web
-- Spring Data JPA
-- H2 Database (in-memory)
-- Lombok
-- Jakarta Validation
+- **Backend**: Spring Boot 3.x, Spring Web, Spring Data JPA
+- **Database**: H2 (in-memory)
+- **Validation**: Jakarta Validation
+- **Utilities**: Lombok, MapStruct (for mapping)
+- **Build Tool**: Maven
 
+## 🏗️ Project Structure
 
+```bash
 com.example.product_api
-│
-├── controller           # REST controllers handling API requests
+├── config/                # Configuration classes
+├── controller/            # REST controllers
 │   └── ProductController.java
-├── service              # Business logic and service layer
-│   └── ProductService.java
-│   └── ProductServiceImpl.java
-├── repository           # Spring Data JPA repositories
+├── service/               # Business logic layer
+│   ├── ProductService.java
+│   └── impl/ProductServiceImpl.java
+├── repository/            # Data access layer
 │   └── ProductRepository.java
-├── dto                  # Data Transfer Objects (Request/Response)
-│   └── ProductRequestDTO.java
-│   └── ProductResponseDTO.java
-├── entity               # JPA Entity classes (representing DB tables)
+├── dto/                   # Data transfer objects
+│   ├── request/ProductRequestDTO.java
+│   └── response/ProductResponseDTO.java
+├── entity/                # JPA entities
 │   └── Product.java
-├── exception            # Custom exceptions and global error handling
-│   └── ProductNotFoundException.java
-│   └── GlobalExceptionHandler.java
-├── utils                # Utility classes like Mappers
+├── exception/             # Exception handling
+│   ├── ProductNotFoundException.java
+│   └── handler/GlobalExceptionHandler.java
+├── mapper/                # Object mapping
 │   └── ProductMapper.java
-├── ProductApiApplication.java # Main class to run the Spring Boot application
-└── resources
-    ├── application.properties
+├── validation/            # Custom validations
+│   └── ValidPrice.java
+└── ProductApiApplication.java  # Main application class
 
 
 🚀 How to Run the Application
