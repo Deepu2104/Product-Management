@@ -1,20 +1,20 @@
-# 🛠️ Product Management REST API with Spring Boot
+#  Product Management REST API with Spring Boot
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-green?logo=spring)
 ![Java](https://img.shields.io/badge/Java-21-blue?logo=java)
 
 A fully functional **RESTful API** built using **Spring Boot** that allows CRUD operations on products. Follows best practices including DTO usage, layered architecture, validation, and centralized exception handling.
 
-## ✨ Features
+##  Features
 
-- ✅ Full CRUD operations for products
-- 🔐 DTO pattern implementation for request/response separation
-- 📏 Comprehensive field validation with custom error messages
-- ⚠️ Global exception handling with consistent error responses
-- 🧼 Clean, layered architecture following SOLID principles
-- 🚀 H2 in-memory database for easy development
+-  Full CRUD operations for products
+-  DTO pattern implementation for request/response separation
+-  Comprehensive field validation with custom error messages
+-  Global exception handling with consistent error responses
+-  Clean, layered architecture following SOLID principles
+-  H2 in-memory database for easy development
 
-## 📦 Tech Stack
+## Tech Stack
 
 - **Backend**: Spring Boot 3.x, Spring Web, Spring Data JPA
 - **Database**: H2 (in-memory)
@@ -22,7 +22,7 @@ A fully functional **RESTful API** built using **Spring Boot** that allows CRUD 
 - **Utilities**: Lombok, MapStruct (for mapping)
 - **Build Tool**: Maven
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```bash
 com.example.product_api
@@ -49,7 +49,7 @@ com.example.product_api
 └── ProductApiApplication.java  # Main application class
 
 
-🚀 How to Run the Application
+### How to Run the Application
 Prerequisites
 JDK 17+ installed on your system
 
