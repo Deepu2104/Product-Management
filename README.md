@@ -1,8 +1,7 @@
 # 🛠️ Product Management REST API with Spring Boot
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-green?logo=spring)
-![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![Java](https://img.shields.io/badge/Java-21-blue?logo=java)
 
 A fully functional **RESTful API** built using **Spring Boot** that allows CRUD operations on products. Follows best practices including DTO usage, layered architecture, validation, and centralized exception handling.
 
